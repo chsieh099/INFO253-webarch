@@ -1,0 +1,9 @@
+1) Your experience with web architecture. Have you written HTML before? Written Javascript? etc.
+
+I have some experience writing HTML, CSS, and JS. I took a Web Design DeCal and a Web Development for Nonprofits DeCal over the past year and thought they were both really interesting. The Web Design DeCal was more of a user interface design course and the Web Development for Nonprofits DeCal taught me a bit about using Django to create and launch a website for a nonprofit organization. I'm currently working on building my own website and exploring different frameworks. I've learned how to use Github to host my website but am working on coding the front-end interface. I'd really like to understand the back-end of how web architecture components work (i.e. how browsers and servers send and receive information).
+
+
+
+2) What are your favorite features from at least 2 browsers?
+
+I've found Google Chrome's inspect element feature really useful when testing out layouts and styling options. Another feature I like is the ability to add extensions like AdBlock (blocks ads on websites like YouTube) and Full Page Screen Capture (useful when wanting to do a quick save of whatever's displaying on the screen). I also like how Chrome allows for keyboard shortcuts when switching between tabs. Safari unfortunately doesn't support very many of these features, although it has a display option of viewing all open tabs in a grid view, unlike Chrome. Both browsers feature bookmarking which is very useful when I see something cool that I'd like to read over later.
