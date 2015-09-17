@@ -1,15 +1,52 @@
+body {
+	font-family: Raleway;
+	font-weight: 300;
+    text-align: center;
+    margin: 50px 0;
+}
 h1 {
-    color: magenta;
+    color: teal;
+    font-weight: 300;
+}
+
+h2 {
+    margin-top: -10px;
+    margin-bottom: -15px;
+    opacity: 0.6;
 }
 
 input {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input:hover {
+    opacity: 0.5;
+}
+label:hover {
+    opacity: 0.5;
+}
+
+label[for=name], label[for=number], label[for=city], label[for=villain], label[for=animal],
+label[for=adj1], label[for=adj2], label[for=adj3] {
+    font-weight: bold;
+}
+
+.question {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -15px;
 }
 
 #madlibStory {
     border: 1px solid;
     height: 200px;
-    width: 400px;
+    width: 600px;
+    border-color: #D3D3D3;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 select {

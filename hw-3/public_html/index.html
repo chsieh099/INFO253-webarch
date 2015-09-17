@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div id="ajax-snippet"></div>
 
-    <h1>Your Madlib Form!</h1>
+    <h1>Welcome to Madlibs</h1>
+    <h2>A SuperStory</h2>
+    <h5>By Cassidy Hsieh</h5>
 
     <!-- Mad lib form -->
     <form id="madlibForm" method="POST">
-        <label for="name">Name: </label> 
-        <input type="text" id="name" name="name">
-
+        <label for="name">Name: </label><input type="text" id="name" name="name">
+        <br>
+        <div class="question">Are you male or female:</div>
+        <br>
+        <label for="radio-male">Male</label><input type="radio" id="radio-male" name="gender" value="male">
+        <label for="radio-female">Female</label><input type="radio" id="radio-female" name="gender" value="female">
+        <br>
+        <div class="question">Pick a super power:</div>
+        <br>
+        <label for="radio-invisiblity">Invisibility</label>
+        <input type="radio" id="radio-invisibility" name="power" value="the ability to become invisible">
+        <label for="radio-flying">Flying</label>
+        <input type="radio" id="radio-flying" name="power" value="the ability to fly">
+        <label for="radio-strength">Superhuman Strength</label>
+        <input type="radio" id="radio-strength" name="power" value="superhuman strength">
+        <br>
+        <label for="radio-mindreading">Mindreading</label>
+        <input type="radio" id="radio-mindreading" name="power" value="the ability to read people's minds">
+        <label for="radio-timetravel">Time Travel</label>
+        <input type="radio" id="radio-timetravel" name="power" value="the ability to time travel">
+        <label for="radio-superspeed">Super Speed</label>
+        <input type="radio" id="radio-superspeed" name="power" value="superspeed power">
+        <br>
+        <div class="question">Choose 3 colors:</div>
+        <br>
+        <label for="check-color">Red</label><input type="checkbox" value="red" id="check-red">
+        <label for="check-color">Orange</label><input type="checkbox" value="orange" id="check-orange">
+        <label for="check-color">Yellow</label><input type="checkbox" value="yellow" id="check-yellow">
+        <br>
+        <label for="check-color">Green</label><input type="checkbox" value="green" id="check-green">
+        <label for="check-color">Blue</label><input type="checkbox" value="blue" id="check-blue">
+        <label for="check-color">Purple</label><input type="checkbox" value="purple" id="check-purple">
+        <br>
+        <label for="check-color">White</label><input type="checkbox" value="white" id="check-white">
+        <label for="check-color">Grey</label><input type="checkbox" value="grey" id="check-grey">
+        <label for="check-color">Black</label><input type="checkbox" value="black" id="check-black">
+        <br>
+        <label for="number">Choose a number greater than 0: </label><input type="number" value="number" id="number">
+        <br>
+        <label for="city">Pick a city: </label><input type="text" id="city" name="city">
+        <br>
+        <label for="villain">Pick a villain: </label><input type="text" id="villain" name="villain">
+        <br>
+        <label for="animal">Pick an animal: </label><input type="text" id="animal" name="animal">
+        <br>
+        <label for="adj1">Pick an adjective: </label><input type="text" id="adj1" name="adj1">
+        <br>
+        <label for="adj2">Pick an adjective: </label><input type="text" id="adj2" name="adj2">
+        <br>
+        <label for="adj3">Pick an adjective: </label><input type="text" id="adj3" name="adj3">
+        <br>
+        <div class="question">Pick an ending: </div>
+        <br>
+        <label for="radio-happy">Happy</label><input type="radio" id="radio-happy" name="ending" value="happy">
+        <label for="radio-sad">Sad</label><input type="radio" id="radio-sad" name="ending" value="sad">
+        <br>
         <input type="submit" value="Create Story" />
     </form>
 
@@ -23,8 +78,8 @@
 
     </div>
 
-    <script src="/static/jquery-1.11.3.js"></script>
-    <script src="/static/script.js"></script>
+    <script src="static/jquery-1.11.3.js"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>
 
