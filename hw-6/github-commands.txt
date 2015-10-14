@@ -1,1 +1,31 @@
 # Please enter answers for hw-6 here
+
+Use the Users resource to discover how many public repositories (public_repos) I have (kayashaolu).
+Curl request used:
+	curl -i "https://api.github.com/users/kayashaolu"
+Answer:
+	2 public repos
+
+Use the Repositories resource to discover which repositories (full_name) I (kayashaolu) am an owner of.
+Curl request used:
+	curl -i "https://api.github.com/users/kayashaolu/repos"
+Answer:
+	kayashaolu/datadiscovery
+	kayashaolu/Spoon-Knife
+
+Use the Repositories resources to find the logins of the contributors to the Drone-Lab-Scripts repository owned by davelester.
+Curl request used:
+	# curl -i "https://api.github.com/users/davelester"
+	# curl -i "https://api.github.com/users/davelester/repos"
+	curl -i "https://api.github.com/repos/davelester/Drone-Lab-Scripts/contributors"
+Answer:
+	davelester
+	nonmetalhail
+	kayashaolu
+	qqz
+
+Use the Commits resource to find what the message was of the first commit to the Drone-Lab-Scripts repository owned by davelester.
+Curl request used:
+	curl -i "https://api.github.com/repos/davelester/Drone-Lab-Scripts/commits"
+Answer:
+	Initial commit
