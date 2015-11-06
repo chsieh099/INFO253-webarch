@@ -1,0 +1,50 @@
+- What series of IPs would a recursive DNS server use to find the address of www.ancestry.com?
+10.142.56.1
+10.142.56.1
+128.32.0.58
+128.32.0.66
+137.164.50.16
+137.164.22.27
+4.15.122.45
+4.69.152.88
+4.68.62.206
+4.68.63.214
+64.86.21.26
+64.86.21.34
+129.250.6.158
+165.254.191.174
+165.254.191.170
+209.200.184.192
+209.200.184.192
+209.200.184.197
+209.200.184.205
+209.200.191.90
+72.52.28.106
+
+traceroute www.ancestry.com
+ 1  xe-1-2-0-525.inr-306-sut.1918.berkeley.edu (10.142.56.1)  1.774 ms  1.731 ms  1.670 ms
+ 2  t5-4.inr-202-reccev.berkeley.edu (128.32.0.58)  1.867 ms  1.848 ms  1.515 ms
+ 3  xe-5-2-0.inr-001-sut.berkeley.edu (128.32.0.66)  1.806 ms  1.660 ms  1.787 ms
+ 4  dc-sfo-agg-1--ucb-10ge.cenic.net (137.164.50.16)  2.698 ms  2.755 ms  2.674 ms
+ 5  dc-svl-agg4--sfo-agg1-10ge-1.cenic.net (137.164.22.27)  4.115 ms  4.083 ms  4.367 ms
+ 6  10-1-1-91.ear1.sanjose1.level3.net (4.15.122.45)  4.212 ms  4.084 ms  4.097 ms
+ 7  ae-2-70.ear1.sanjose3.level3.net (4.69.152.88)  6.190 ms  7.656 ms *
+ 8  ntt-level3-4x10g.sanjose.level3.net (4.68.62.206)  28.246 ms  30.300 ms
+    4.68.63.214 (4.68.63.214)  15.406 ms
+ 9  64.86.21.26 (64.86.21.26)  41.067 ms
+    64.86.21.34 (64.86.21.34)  12.271 ms
+    ae-46.r01.snjsca04.us.bb.gin.ntt.net (129.250.6.158)  16.697 ms
+10  d1-4-1-12.a00.nycmny03.us.ce.verio.net (165.254.191.174)  30.340 ms
+    d1-4-1-11.a00.nycmny03.us.ce.verio.net (165.254.191.170)  18.411 ms
+    209.200.184.192 (209.200.184.192)  15.624 ms
+11  209.200.184.192 (209.200.184.192)  15.948 ms
+    209.200.184.197 (209.200.184.197)  11.013 ms  7.408 ms
+12  209.200.184.205 (209.200.184.205)  6.537 ms  6.971 ms  6.145 ms
+13  209.200.191.90 (209.200.191.90)  21.701 ms
+    unknown.prolexic.com (72.52.28.106)  23.850 ms *
+
+- What are the IP addresses of www.ancestry.com?
+66.43.22.170
+
+- What is the IP address of your local app.py server?
+127.0.0.1
