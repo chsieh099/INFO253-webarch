@@ -1,0 +1,29 @@
+[SELECT]
+
+Q: How many players make more than $4,000,000?
+A:
+	SELECT * from Players where Salary > 4000000
+	23 players make more than $4,000,000
+
+Q: How many pitchers are in this list?
+A:
+	SELECT * from Players where Position = "Pitcher";
+	27 pitchers
+
+
+[INSERT]
+
+Q: Insert yourself as a player for the San Francisco Giants with a $1,000,000 salary at the position of pitcher
+A:
+	INSERT into Players VALUES ('San Francisco Giants', 'Cassidy Hsieh', 1000000, 'Pitcher');
+
+Q: Is it possible that someone querying the database at the same time could see your insert partially complete (eg. only see some fields filled in)? What database property is this related to?
+A:
+	No, because SQL is has atomicity, all updates happen or none do
+
+
+[UPDATE]
+
+Q: You got a raise: update your player’s salary to $2,000,000
+A:
+	UPDATE Players SET Salary=2000000 WHERE Player='Cassidy Hsieh';
