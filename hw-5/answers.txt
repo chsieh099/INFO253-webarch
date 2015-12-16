@@ -1,0 +1,29 @@
+• What HTTP command is used to make the http://127.0.0.1:5000/home resource respond with your full name (including spaces), the title of the page should be the full title of this class.
+	http://127.0.0.1:5000/home?name=Cassidy%20Hsieh
+
+• Write this PUT request in your answers.txt file.
+
+	PUT /redirect HTTP/1.1
+	Host: localhost
+	Content-Length: 50
+	Content-Type: application/x-www-form-urlencoded
+
+	location=http://ischool.berkeley.edu
+
+• How do you verify this change? Write out how in your answers.txt file
+
+	Refresh 127.0.0.1:5000/redirect page; should be redirected to new target
+
+• Use a POST to update the redirect target of http://127.0.0.1:5000/redirect to another location. Write this POST request in your answers.txt file.
+
+	POST /redirect HTTP/1.1
+	Host: localhost
+	Content-Length: 50
+	Content-Type: application/x-www-form-urlencoded
+
+	location=http://google.com
+
+• Update app.py to correctly return an image from http://127.0.0.1:5000/image
+	
+	added this line before return:
+	resp.headers['Content-Type'] = 'image/jpg'

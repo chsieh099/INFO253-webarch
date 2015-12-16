@@ -52,7 +52,7 @@ def load_redirect():
 		return redirect(redirect_db["location"], code=302)
 	else: # If the method is either POST or PUT
 		# Change the redirect path to the parameter named "name"
-		redirect_db["location"] = request.form.get('location', "http://ischool.berkeley.edu").strip() # Remove newline at end of telnet requests
+		redirect_db["location"] = request.form.get('location', "").strip() # Remove newline at end of telnet requests
 		
 		return render_template("redirect.html", location=redirect_db["location"])
 
@@ -67,10 +67,11 @@ def image():
 	in_file.close()
 
 	resp = make_response(data);
-	# Comment in to set header below
-	#resp.headers['Content-Type'] = ""
+
+	resp.headers['Content-Type'] = 'image/jpg'
 
 	return resp
 
 if __name__ == "__main__":
 	app.run(debug=True)
+
